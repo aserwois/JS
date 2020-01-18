@@ -1,6 +1,11 @@
+// Const
+const interestRate = 0.3;
+interestRate = 1;
+console.log(interestRate);
+
+// 
 let name = "Mathew";
-console.log(name);
-
-let firstName = "Mathew";
-let lastName = "Gabriel";
-
+let age = 30;
+let isApproved = true;
+let firstName = undefined;
+let selectedColor = null;
