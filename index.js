@@ -23,3 +23,29 @@ person.name = 'Pedro';
 
 console.log(person)
 
+// Arrays
+
+let selectedColors = ['red','blue'];
+
+selectedColors[2] = 'Green';
+selectedColors[3] = 21;
+
+console.log(selectedColors);
+
+//Performing a task
+
+function greet(name, age) {
+    console.log('Hello mister ' + name + 'You are ' + age + "yo");
+}
+
+greet('Maew',29);
+
+//Calculating a vlue
+
+function square(number) {
+    return number * number;
+}
+
+console.log(square(2));
+
+
