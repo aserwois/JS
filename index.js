@@ -1,51 +1,74 @@
-// Const
-let interestRate = 0.3;
-interestRate = 1;
-console.log(interestRate);
-
-// variable types
-let name = "Mathew";
-let age = 30;
-let isApproved = true;
-let firstName = undefined;
-let selectedColor = null;
-
-// Dynamic typing (We can change var type in every place in code)
-
-// Objects (Reference types: Objects, Arrays, Functions)
-
-let person = {
-    name: 'Mathew',
-    age: 30
-};
-
-person.name = 'Pedro';
-
-console.log(person)
-
-// Arrays
-
-let selectedColors = ['red','blue'];
-
-selectedColors[2] = 'Green';
-selectedColors[3] = 21;
-
-console.log(selectedColors);
-
-//Performing a task
-
-function greet(name, age) {
-    console.log('Hello mister ' + name + 'You are ' + age + "yo");
+/*function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+    var result = "";
+    result += "The " + myAdjective + " " + myNoun + " "+ myVerb + " " + myAdverb
+    return result;
 }
 
-greet('Maew',29);
+console.log(wordBlanks("dog","big", "run", "quickly"));
 
-//Calculating a vlue
+//Array
 
-function square(number) {
-    return number * number;
+var ourArray = [["Mathew", 29], ["Pablo",22]];
+var mathewArray = ourArray[0];
+var myArray = ["Quincy", 1];
+
+console.log(ourArray[0][0]);
+
+//Push Array
+
+/*ourArray.push(["dog",12]);
+console.log(ourArray);
+
+var removedOurArray = ourArray.pop();
+console.log(ourArray);
+
+var removedFirstElem = ourArray.shift();
+console.log(ourArray);
+
+ourArray.unshift(['Happy',12]);
+console.log(ourArray);
+
+//Shopping list in array
+var myList = [["cereal", 3], ["milk", 2], ["bannas", 3], ["juice", 2], ["eggs", 12]];
+*/
+
+//functions
+function ourReusableFunction() {
+    console.log("Heyya, World");
 }
 
-console.log(square(2));
+ourReusableFunction();
 
+function reusableFunction() {
+    console.log("Hi World");
+}
+
+reusableFunction();
+
+function ourFunctionWithArgs(a, b) {
+    var result = a - b;
+    return result;
+}
+
+console.log(ourFunctionWithArgs(10,5));
+
+function funtionWithArg(a, b) {
+    var sum = a + b;
+    return sum;
+}
+
+console.log(funtionWithArg(2,2));
+
+
+var tabliczkaMnozenia;
+
+var outerWear = "T-Shirt";
+
+function myOutfit() {
+    var outerWear = "Jeans";
+    return outerWear;
+}
+
+console.log(myOutfit());
+console.log(outerWear);
 
