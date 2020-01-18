@@ -1,31 +1,14 @@
-function ourTrueOrFalse(isItTrue) {
-    if (isItTrue) {
-        return "Yes, it's true!";
+function testGreaterThan(val) {
+    if (val > 100) {
+        return "Over 100";
     }
 
-    return "No, it's false";
-}
-
-function trueOrFalse(wasThatTrue) {
-    if(wasThatTrue) {
-        return "Yes, that was true!";
+    if (100 > val > 10) {
+        return "Over 10";
     }
 
-    return "No, false!!!";
+    return "10 or under";
 }
 
-console.log(trueOrFalse(true));
-
-//New
-
-function testEqual(val) {
-    if (val != 10) {
-        return "Not Equal :)";
-    }
-
-    return "Equal :(";
-}
-
-console.log(testEqual(9));
-console.log(testEqual(10));
+console.log(testGreaterThan(101));
 
