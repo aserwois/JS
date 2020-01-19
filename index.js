@@ -1,16 +1,22 @@
-var myStorage = {
-    car: {
-        inside: {
-            gloveBox: "maps",
-            passengerSeat: "crumbs"
-        },
-        outside: {
-            trunk: "jack",
-            dupa: "niewiem"
-        }
+var myPlants = [
+    {
+        type: "flowers",
+        list: [
+            "rose",
+            "tulip",
+            "dandelion"
+        ]
+    },
+    {
+        type: "trees",
+        list: [
+            "fir",
+            "pine",
+            "applepie"
+        ]
     }
-}
+]
 
-var myCarInside = myStorage.car.outside;
+var secondTree = myPlants[1].list[1];
 
-console.log(myCarInside);
+console.log(myPlants[1]);
