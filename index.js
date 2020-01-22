@@ -1,37 +1,18 @@
-var myPlants = [
-    {
-        "type": "flowers",
-        "list": [
-            "rose",
-            "tulip",
-            "dandelion"
-        ]
-    },
-    {
-        "type": "trees",
-        "list": [
-            "fir",
-            "pine",
-            "applepie"
-        ]
-    }
-]
+var myArray = [];
 
-var secondTree = myPlants[1].list[1];
+var i = 0;
 
-//console.log(myPlants[1]);
-
-function returnCollection(id, prop, value) {
-    if(value === "") {
-        delete myPlants[id][prop];
-    } else if ( prop === "list") {
-        myPlants[id][prop] = myPlants[id][prop] || [];
-        myPlants[id][prop].push(value);
-    } else {
-        myPlants[id][prop] = value;
-    }
-
-    return myPlants;
+while(i < 5) {
+    myArray.push(i);
+    i++;
 }
 
-console.log(returnCollection(1,"list","głowa"));
+console.log(myArray)
+
+var ourArray = [];
+
+for (var i = 0; i < 5; i++) {
+    ourArray.push(i);
+}
+
+console.log(ourArray);
