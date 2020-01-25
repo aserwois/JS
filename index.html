@@ -9,78 +9,34 @@
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
             <title>Mathew Webpage!</title>
         </head> 
-        <body style="background-color: whitesmoke">
-            <!-- dodanie stylu font-family do dodania z google-->
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster" type="text/css">
-
-            <!-- Inline style css, czyli wewnatrz taga
-            Classes moga być w wielu miejscach, ID jest unikalne i moze byc uzyte tylko raz -->
+        
+        <body>
             <style>
 
-                #heading {
-                    color: green;
+                /* nadpisywanie wartosci najpierw clasa -> id -> inline wewnatrz taga(najwyzszy priorytet) */
+
+                body {
+                    background-color: black;
+                    color: grey;
+                    font-family: monospace;
                 }
 
-                #cat-photo-form {
-                    background-color: violet;
+                #orange-text {
+                    color:orange;
                 }
 
-                .silver-background {
-                    background-color: silver;
-                }
-
-                .thick-green-border {
-                    border-color: green;
-                    border-width: 2px;
-                    border-style: solid;
-                    border-radius: 50%;
-                }
-
-                .smaller-image {
-                    width: 300px;
+                .pink-text {
+                    color: pink;
                 }
 
                 .blue-text {
-                    color: blue;
+                    color:blue;
                 }
 
-                p {
-                    font-size: 18px;
-                    font-family: Helvetica, monospace;
-                }
-
-                h2 {
-                    font-family: Lobster, monospace;
-                }
-
-
-                
             </style>
-
-            <h2 id="heading">Lorem website!</h2>
-
-            <main class="silver-background">
-                <p class="blue-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia reprehenderit 
-                    accusantium dicta itaque provident recusandae iusto. Illo doloribus quis ea 
-                    quod magni rem illum accusamus.
-                </p>
-
-                <img  class="smaller-image thick-green-border" src="2.jpg" alt="Jakiś typek z neta">
-
-                <p>Lorem ipsum dolor sit amet.</p>
-            </main>
-
-            <form id="cat-photo-form">
-                <label><input type="radio" name="indoor" checked>Indoor</label>
-                <label><input type="radio" name="indoor">Outdoor</label>
-                <label><input type="checkbox" name="personality" checked>Loving</label>
-                <label><input type="checkbox" name="personality">Lazy</label>
-                <Label><input type="submit" value="Submit"></Label>
-            </form>
-
             
-            
+            <h1 id="orange-text" class="pink-text blue-text" style="color: white">Hello Mathew</h1>
+
         <script src="Index.js"></script>
         </body>
     </html>
