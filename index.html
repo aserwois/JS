@@ -16,6 +16,17 @@
             <!-- Inline style css, czyli wewnatrz taga -->
             <style>
 
+                .silver-background {
+                    background-color: silver;
+                }
+
+                .thick-green-border {
+                    border-color: green;
+                    border-width: 2px;
+                    border-style: solid;
+                    border-radius: 50%;
+                }
+
                 .smaller-image {
                     width: 300px;
                 }
@@ -37,15 +48,19 @@
 
             <h2>Lorem website!</h2>
 
-            <p class="blue-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia reprehenderit 
-                accusantium dicta itaque provident recusandae iusto. Illo doloribus quis ea 
-                quod magni rem illum accusamus.
-            </p>
+            <main class="silver-background">
+                <p class="blue-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia reprehenderit 
+                    accusantium dicta itaque provident recusandae iusto. Illo doloribus quis ea 
+                    quod magni rem illum accusamus.
+                </p>
 
-            <img  class="smaller-image" src="2.jpg" alt="Jakiś typek z neta">
+                <img  class="smaller-image thick-green-border" src="2.jpg" alt="Jakiś typek z neta">
 
-            <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </main>
+
+            
             
         <script src="Index.js"></script>
         </body>
