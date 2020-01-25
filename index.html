@@ -11,32 +11,19 @@
         </head> 
         
         <body>
-            <style>
 
-                /* nadpisywanie wartosci najpierw clasa -> id -> inline wewnatrz taga(najwyzszy priorytet) */
+            <style>
+                /*deklarowanie zmiennych w pseudo klasie root i przypisywanie z wartoscia funkcja var()*/
+                :root {
+                    --main--kolor: violet;
+                }
 
                 body {
-                    background-color: black;
-                    color: grey;
-                    font-family: monospace;
-                }
-
-                #orange-text {
-                    color:orange;
-                }
-
-                .pink-text {
-                    color: pink !important;
-                }
-
-                .blue-text {
-                    color:blue;
+                    background-color: var(--main--kolor);
                 }
 
             </style>
-            
-            <h1 id="orange-text" class="pink-text blue-text" style="color: white">Hello Mathew</h1>
-
+               
         <script src="Index.js"></script>
         </body>
     </html>
