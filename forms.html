@@ -19,8 +19,28 @@
         </form>
 
         <!-- radio button -->
-            <input type="radio">
-            <input type="checkbox">
+        <form>
+            <p>DO you prefer cats or dogs?</p>
+
+            <label for="dogs">Dogs: </label>
+            <input id="dogs" name="petChoice" type="radio" value="dogs">
+
+            <label for="cats">Cats: </label>
+            <input id="cats" name="petChoice" type="radio" value="cats">
+
+            <p>Pick favourite color:</p>
+            <select name="pickColor" id="color">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="orange">Orange</option>
+                <option value="yellow">Yellow</option>
+            </select>
+
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+
+            <button>Go!</button>
+        </form>
+           
         <!-- select tag -->
         
     </body>
