@@ -1,0 +1,15 @@
+body {
+    background-color: coral;
+}
+
+#special {
+    background-color: palegreen;
+}
+
+li {
+    border: 1px solid aquamarine;
+}
+
+.completed {
+    text-decoration: line-through;
+}
