@@ -1,0 +1,16 @@
+h1 {
+    color: #FF0000;
+    border: 5px solid blue;
+}
+
+li {
+    color: orange;
+}
+
+h4 {
+    color: blue;
+}
+
+body {
+    background: url(2.jpg);
+}
