@@ -3,13 +3,53 @@
         <head>
             <title>Bootstrap Basics</title>
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         </head>
         <body>
-            <h1>Bootstrap Basics</h1>
-            <Button class="btn btn-success btn-sm">Click me!</Button>
-            <Button class="btn btn-success btn-sm active">Click me!</Button>
-            <Button class="btn btn-warning btn-sm">Click me!</Button>
-            <a href="http://www.getbootstrap.com" class="btn btn-info btn-sm">Go to Bootstrap!</a>
+            <div class="container">
+                <div class="jumbotron">
+                    <h1>Hello World!</h1>
+                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur.</p>
+                    <p><a href="#" class="btn btn-primary btn-lg">Learn more</a></p>
+                </div>
+
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" id="exampleInputEmail1" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" id="exampleInputPassword1" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFile">File Input</label>
+                        <input type="file" id="exampleInputFile" class="form-control" placeholder="file">
+                        <small class="form-text text-muted">Example block-level help text here.</small>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" style="margin: 5px;">Check me out
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form> 
+
+                <hr>
+
+                <!-- form inline -->
+
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="email1">Email address </label>
+                        <input type="email" class="form-control" placeholder="Email" id="email1">
+                    </div>
+                    <div class="form-group">
+                        <label for="password1">Password </label>
+                        <input type="password" placeholder="Password" class="form-control" id="email1">
+                    </div>
+                    <button type="submit" class="btn btn-warning">Log In</button>
+                </form>
+            </div>
         </body>
     </html>
