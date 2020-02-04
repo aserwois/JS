@@ -7,14 +7,17 @@
 // }
 
 function factorial(numm) {
-    while(numm != 0) {
         var result = 1;
         for(var i = 1; i <= numm; i++) {
             result = result  * i;
         }
-    }
 
     return result;
+}
+
+function replacing(str) {
+    var newStr = str.replace(/-/g, "_");
+    return newStr;
 }
 
 // // Wyświetla w konsoli ale bedziemy chcieli wstawic 
@@ -44,3 +47,11 @@ function factorial(numm) {
 // var num = 32;
 // var capital1 = capitalize(num);
 
+function factorial(num) {
+    var resulat = 1;
+    for(i = 1; i <= numm; i++) {
+        result = result * i;
+    }
+
+    return result;
+}
