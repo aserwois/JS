@@ -1,31 +1,54 @@
+// var number = 19;
 
-function startGame() {
-var firstName = prompt("Jak masz na imię?")
-var lastName = prompt("Jak masz na nazwisko?")
-var age = prompt("Ile massz lat?")
+// while(number <= 19 && number >= -10) { 
+//     console.log(number);
+//     number--;
+// }
 
-var fullName = firstName + " " + lastName
+// var numb = 5;
 
-alert("Witaj " + fullName + ", wszyscy wiedzą, że masz " + age + " lat")
-}
+// while(numb <= 50 && numb >= 5) {
+//     if(numb % 3 === 0 && numb % 5 === 0) {
+//     console.log(numb)
+//     }
 
-function ageGame() {
-    var wiek = prompt("Ile masz lat?")
+//     numb++
+// }
 
-    var dni = wiek * 365.2
-
-    if(wiek <= 0 || wiek.length <= 0) {
-        alert("Jeszcze sie nie urodziłeś :D babasku:)")
-    } else {
-    alert("Przeżyłeś już " + dni + " dni mistrzu! Tak trzymaj :)!")
+for(numb = 5;numb <= 50 && numb >= 5; numb++) {
+    if(numb % 3 === 0 && numb % 5 === 0) {
+        console.log(numb)
     }
 }
 
-var string = "Hello";
 
-var count = 0;
+// function startGame() {
+// var firstName = prompt("Jak masz na imię?")
+// var lastName = prompt("Jak masz na nazwisko?")
+// var age = prompt("Ile massz lat?")
 
-while (count < string.length) {
-    console.log(string[count]);
-    count++;
-}
+// var fullName = firstName + " " + lastName
+
+// alert("Witaj " + fullName + ", wszyscy wiedzą, że masz " + age + " lat")
+// }
+
+// function ageGame() {
+//     var wiek = prompt("Ile masz lat?")
+
+//     var dni = wiek * 365.2
+
+//     if(wiek <= 0 || wiek.length <= 0) {
+//         alert("Jeszcze sie nie urodziłeś :D babasku:)")
+//     } else {
+//     alert("Przeżyłeś już " + dni + " dni mistrzu! Tak trzymaj :)!")
+//     }
+// }
+
+// var string = "Hello";
+
+// var count = 0;
+
+// while (count < string.length) {
+//     console.log(string[count]);
+//     count++;
+// }
