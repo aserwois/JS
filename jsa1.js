@@ -6,6 +6,14 @@ function isEven(num) {
     return false;
 }
 
+var isEven = function(num) {
+    if(num % 2 === 0) {
+        return false;
+    }
+
+    return true;
+}
+
 // // Wyświetla w konsoli ale bedziemy chcieli wstawic 
 // // do stringa to nie podmieni tego(brak strzalki w konsoli obok wyniku)
 
