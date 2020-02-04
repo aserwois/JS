@@ -20,3 +20,12 @@ function ageGame() {
     alert("Przeżyłeś już " + dni + " dni mistrzu! Tak trzymaj :)!")
     }
 }
+
+var string = "Hello";
+
+var count = 0;
+
+while (count < string.length) {
+    console.log(string[count]);
+    count++;
+}
