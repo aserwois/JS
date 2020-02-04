@@ -1,17 +1,20 @@
-function isEven(num) {
-    if(num % 2 === 0) {
-        return true;
-    } 
+// function isEven(num) {
+//     if(num % 2 === 0) {
+//         return true;
+//     } 
 
-    return false;
-}
+//     return false;
+// }
 
-var isEven = function(num) {
-    if(num % 2 === 0) {
-        return false;
+function factorial(numm) {
+    while(numm != 0) {
+        var result = 1;
+        for(var i = 1; i <= numm; i++) {
+            result = result  * i;
+        }
     }
 
-    return true;
+    return result;
 }
 
 // // Wyświetla w konsoli ale bedziemy chcieli wstawic 
