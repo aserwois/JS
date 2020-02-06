@@ -1,20 +1,13 @@
-var friend = ["Mathew","Łozi","Karol"]
+var todos = [];
 
-// alert(friend[0]);
-
-var friends = [];
-var friends = new Array();
-
-// array has length/can hold any type of data
-
-friend.push("Ktośtam");
-friend.push("cośtam");
-
-// unshift - dodac na poczatek tablicy
-// shift - usunac pierwszy item z tablicy
-
-indexOf
-
-friend.indexOf("Mathew");
-
-friend.indexOf("dupa") zwraca -1 jesli nie ma elementu
+window.setInterval(function() {
+    var firstQuestion = prompt("What you would like to do?")
+    if(firstQuestion === "list") {
+        console.log(todos);
+    } else if (firstQuestion === "new") {
+        var addNewItem = prompt("Please write new list item");
+        todos.push(addNewItem);
+    }  else if (firstQuestion === "quit") {
+       return alert("Thanks for exercising!");
+    }
+}, 500)
