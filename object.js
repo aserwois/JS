@@ -1,28 +1,24 @@
-// var person = {
-//     name: "Mathew",
-//     age: 29,
-//     city: "Warsaw"
-// };
+var movies = [
+    {
+        title: "Yes Man",
+        watched: true,
+        rating: 4.5
+    },
+    {
+        title: "Wojna",
+        watched: false,
+        rating: 1.5
+    },
+    {
+        title: "No man",
+        watched: false,
+        rating: 5
+    }
+]
 
-// console.log(person.name);
-// console.log(person["age"])
-
-// var cat = {
-//     name: "Batman",
-//     age: 1,
-//     city: "Warsaw"
-// }
-
-// console.log(cat.city) 
-
-var someObject = {
-    friends: [
-        {name: "Malfoy"},
-        {name: "Crabbe"},
-        {name: "Goyle"}
-    ],
-    color: "baby blue",
-    isEvil: true
-}
-
-someObject.friends[0].name;
+movies.forEach(function(movie) {
+    if(movie.watched) {
+        console.log("I have seen that movie called " + movie.title + ". Rating of that is " + movie.rating + " stars.");
+    }
+    console.log("I have not seen that movie called " + movie.title + ". Rating of that is " + movie.rating + " stars.");
+})
