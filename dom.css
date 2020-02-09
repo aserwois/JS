@@ -1,3 +1,8 @@
 body {
     background-color: pink;
 }
+
+.h1Class {
+    color: blue;
+    border: 2px solid black;
+}
