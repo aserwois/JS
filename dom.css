@@ -1,8 +1,15 @@
-body {
-    background-color: pink;
+.winner {
+    color:green;
 }
 
-.h1Class {
-    color: blue;
-    border: 2px solid black;
+div {
+    text-align: center;
+}
+
+input {
+    margin: 20px;
+}
+
+button {
+    margin: 10px;
 }
