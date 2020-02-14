@@ -33,6 +33,10 @@ playerTwo.addEventListener("click", function() {
 })
 
 reset.addEventListener("click", function() {
+    reseted();
+})
+
+function reseted() {
     p1Score = 0;
     p2Score = 0;
     p1Display.textContent = p1Score;
@@ -40,12 +44,15 @@ reset.addEventListener("click", function() {
     gameOver = false;
     p1Display.classList.remove("winner")
     p2Display.classList.remove("winner")
-})
+}
 
 var inputWinScore = document.querySelector("input")
 var winScore = document.getElementById("winScore");
 
+
+
 inputWinScore.addEventListener("change", function() {
-    winScore.textContent = inputWinScore.value;
-    winningScore = Number(inputWinScore.value);
+    winScore.textContent = this.value;
+    winningScore = Number(this.value);
+    reseted();
 })

@@ -1,3 +1,15 @@
+var bodyb = document.querySelector(".bodyb")
+
+bodyb.addEventListener("click", function() {
+    this.classList.toggle(".bodyb")
+})
+
+var buttons = document.querySelector("button")
+
+buttons.addEventListener("click", function() {
+    document.body.classList.toggle("bodyb");
+})
+
 // var h1 = document.querySelector("h1");
 
 // h1.style.color = "white";
@@ -21,6 +33,13 @@
 // var itag = document.getElementById("first");
 // var ctag = document.getElementsByClassName("dupcia");
 
-var h1 = document.querySelector("h1");
+// var h1 = document.querySelector("h1");
 
-h1.classList.add(".h1Class")
+// h1.classList.add(".h1Class")
+
+// var p = document.querySelector("p")
+
+// p.addEventListener("click", function() {
+//     p.textContent = "Kliknałeś na coś tam"
+// })
+
