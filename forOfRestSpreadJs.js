@@ -49,3 +49,11 @@ function onlyEvenValues(arr){
     });
     return newArr;
 }
+
+function showFirstAndLast(arr){
+    var newArr = [];
+    arr.forEach(function(val) {
+        newArr.push(arr[0] + arr[arr.length - 1]);
+    });
+    return newArr;
+}
