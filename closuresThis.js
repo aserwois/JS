@@ -53,3 +53,37 @@ course1.getInstructiors(); // ["a","b","Mati","Łozi"]
 
 var course2 = classRoom();
 course2.getInstructiors(); // ["Mati","Łozi"]
+
+function specialMultiply(a,b){
+    if(b === NULL) {
+        return function(b) {
+            return a * b;
+        }
+    }
+    return a * b
+}
+
+function guessingGame(amount) {
+    var answer = Math.floor(Math.random() * 11),
+        guesses = 0;
+
+    return function (guess) {
+
+        //Increment guesses
+        guesses++;
+
+        //Return if guess limit exceeded
+        if (guesses > amount) return 'No more guesses the answer was ' + answer;
+
+        //Check if guess is high, low or correct, return message
+        if (guess > answer) {
+            return 'Your guess is too high!';
+        }
+        else if (guess < answer) { 
+            return 'Your guess is too low!';
+        }
+        else { 
+            return 'You got it!';
+        }
+    };
+}
