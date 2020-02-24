@@ -25,6 +25,16 @@ function invokeMax(add, counter) {
             guesses++
             return add.apply(this, arguments); 
         }
-        return "Maxed Out!"
+        return "Maxed Out!";
+    }
+}
+
+function once(fn, thisArg){
+    var hasBeenCalled = false;
+    return function(){
+    	if(!hasBeenCalled){
+    		hasBeenCalled = true;
+    		return fn.apply(thisArg, arguments)
+    	}
     }
 }
