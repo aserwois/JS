@@ -1,23 +1,10 @@
-//global this!
-
-var inst = "a"
-
-window.inst === inst;
-
-function whatIsThis(){
-    return this;
+function specialMultiply(a, b) {
+    if (b == null) {
+        return function (b) {
+            return a * b;
+        };
+    }
+    return a * b;
 }
 
-whatIsThis(); //window
-
-function varablesInThis(){
-    this.person = "Elie";
-    var idiota = "d"
-}
-
-varablesInThis()
-console.log(person)
-console.log(idiota)
-
-//strict mode "use strict" is preventing us from this
-//using Typeerror.
+specialMultiply(3)(4); // 12
