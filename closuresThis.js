@@ -1,40 +1,19 @@
-// zwróc tablice z array like Object
-
-function arrayFrom(arrayLikeObject){
-    return [].slice.call(arrayLikeObject);
+function Person(firstName, lastName, favoriteColor, favoriteNumber) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.favoriteColor= favoriteColor;
+    this.favoriteNumber = favoriteNumber;
+    this.multiply = number => number * this.favoriteNumber;
 }
 
-function sumEvenArguments() {
-    var newArgs = [].slice.call(arguments)
-    return newArgs.reduce(function(acc, next) {
-        if(next % 2 === 0) {
-            return acc + next;
-        }
-        return acc;
-    }, 0)
-}
-
-function add(a,b) {
-    return a + b;
-}
-
-function invokeMax(add, counter) {
-    guesses = 0;
-    return function() {
-        if(guesses <= counter) {
-            guesses++
-            return add.apply(this, arguments); 
-        }
-        return "Maxed Out!";
-    }
-}
-
-function once(fn, thisArg){
-    var hasBeenCalled = false;
-    return function(){
-    	if(!hasBeenCalled){
-    		hasBeenCalled = true;
-    		return fn.apply(thisArg, arguments)
-    	}
-    }
-}
+function Parent(firstName, lastName, favoriteColor, favoriteFood) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.favoriteColor = favoriteColor;
+    this.favoriteFood = favoriteFood;
+  }
+  
+  function Child(firstName, lastName, favoriteColor, favoriteFood) {
+    Parent.apply(this, arguments);
+  }
+  
