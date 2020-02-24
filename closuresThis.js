@@ -1,33 +1,30 @@
-function specialMultiply(a, b) {
-    if (b == null) {
-        return function (b) {
-            return a * b;
-        };
-    }
-    return a * b;
+// zwróc tablice z array like Object
+
+function arrayFrom(arrayLikeObject){
+    return [].slice.call(arrayLikeObject);
 }
 
-specialMultiply(3)(4); // 12
-
-function guessingGame(amount) {
-    var answer = Math.floor(Math.random() * 11),
-        guesses = 0;
-
-    return function (guess) {
-
-        //Increment guesses
-        guesses++;
-
-        //Return if guess limit exceeded
-        if (guesses > amount) return 'No more guesses the answer was ' + answer;
-
-        //Check if guess is high, low or correct, return message
-        if (guess > answer) {
-            return 'Your guess is too high!';
+function sumEvenArguments() {
+    var newArgs = [].slice.call(arguments)
+    return newArgs.reduce(function(acc, next) {
+        if(next % 2 === 0) {
+            return acc + next;
         }
-        else if (guess < answer) { 
-            return 'Your guess is too low!';
+        return acc;
+    }, 0)
+}
+
+function add(a,b) {
+    return a + b;
+}
+
+function invokeMax(add, counter) {
+    guesses = 0;
+    return function() {
+        if(guesses <= counter) {
+            guesses++
+            return add.apply(this, arguments); 
         }
-        else { 
-            return "cos tam";
-        }
+        return "Maxed Out!"
+    }
+}
