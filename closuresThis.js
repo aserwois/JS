@@ -1,16 +1,46 @@
 function Person(name) {
     this.name = name;
+    this.sayHi = function() {
+        return `Hi ${this.name}`
+    }
 }
 
-var mati = new Person("Mateusz");
+elie = new Person("Elie");
+elie.sayHi();
 
-Person.inInstructor = true;
+function Person(name) {
+    this.name = name;
+}
 
-mati.inInstructor;
+Person.prototype.sayHi = function() {
+    return `Hi ${this.name}`;
+}
 
-var arr = [];
+elie = new Person("Elie");
+elie.sayHi();
 
-var arr = new Array;
+function Vehicle(make, model, year) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+    this.isRunning = false;
+};
 
-__proto__ // metoda przenoszaca nas do tablica prototype 
-// a pozniej obiekt prototype
+Vehicle.prototype.turnOn = function() {
+    return this.isRunning = true;
+}
+
+Vehicle.prototype.turnOff = function() {
+    return this.isRunning = false;
+}
+
+Vehicle.prototype.beep = function() {
+    if(this.isRunning) {
+        return `Beeep!`
+    }
+    return `Your car is not running, sorry!`
+}
+
+var opel = new Vehicle("Opel","Astra",1990)
+
+opel.isRunning();
