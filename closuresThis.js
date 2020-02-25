@@ -44,3 +44,11 @@ Vehicle.prototype.beep = function() {
 var opel = new Vehicle("Opel","Astra",1990)
 
 opel.isRunning();
+
+Person.prototype.addToFamily = function(personObj) {
+    if(personObj instanceof Person && this.family.indexOf(personObj) === -1) {
+      this.family.push(personObj);
+    }
+    
+    return this.family.length;
+  };
