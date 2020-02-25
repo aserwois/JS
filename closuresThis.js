@@ -1,19 +1,16 @@
-function Person(firstName, lastName, favoriteColor, favoriteNumber) {
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.favoriteColor= favoriteColor;
-    this.favoriteNumber = favoriteNumber;
-    this.multiply = number => number * this.favoriteNumber;
+function Person(name) {
+    this.name = name;
 }
 
-function Parent(firstName, lastName, favoriteColor, favoriteFood) {
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.favoriteColor = favoriteColor;
-    this.favoriteFood = favoriteFood;
-  }
-  
-  function Child(firstName, lastName, favoriteColor, favoriteFood) {
-    Parent.apply(this, arguments);
-  }
-  
+var mati = new Person("Mateusz");
+
+Person.inInstructor = true;
+
+mati.inInstructor;
+
+var arr = [];
+
+var arr = new Array;
+
+__proto__ // metoda przenoszaca nas do tablica prototype 
+// a pozniej obiekt prototype
