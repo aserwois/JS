@@ -35,21 +35,26 @@
         }
 
         ReactDOM.render(<RandomBox />, document.getElementById('app'));
-
+        class HobbyList extends React.Component {
+            render() {
+                const hobbies = ["Reading","Running","Swimming"];
+                <ul>
+                   {hobbies.map((h, i) => {return <li key={i}>{h}</li>}) }  
+                </ul>
+            }
+        }
 
 
 
         // class Pet extends React.Component {
         //     render() {
-        //         const hobbies = ["Reading","Running","Swimming"];
+        //         
         //         return (
         //             <div className="card">
         //                 <h2>Movie</h2>
         //                 <img src="1.png" alt="That is not Moxie" />
-        //                 <ul>
-        //                     {hobbies.map((h, i) => {return <li>{h}</li>}) }  
-        //                 </ul>
         //             </div>
+        //             <HobbyList />
         //         );
         //     }
         // }  
